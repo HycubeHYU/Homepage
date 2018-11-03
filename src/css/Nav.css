@@ -14,17 +14,12 @@
 /* 책 이름 */
 .book-name{
     padding:25px;
-    text-align: center;
     font-size: 40px;
-    animation-name:spin;
-    animation-duration: 1s;
-    height:80px;
-    width:250px;
 }
 
 .book-nav {
     position: absolute;
-    background-color: #dfdfdf;
+    background-color: #fff;
     top: 0;
     left: 0;
     height: 100%;
