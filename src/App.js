@@ -1,41 +1,57 @@
-import React, { Component } from 'react';
-import Nav from './components/Nav';
-import Wrapper from './components/Wrapper';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faAngleLeft,faAngleRight,faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import React, { Component } from "react";
+import Main from "./components/home/Main";
+import Head from './components/Head';
+import Notice from './components/notice/Notice';
+import Study from './components/study/Study';
+import Wiki from './components/wiki/Wiki';
+import More from './components/more/Menus';
 
-import './App.css';
+import Footer from './components/Footer';
 
-library.add(faAngleLeft,faAngleRight,faCommentDots)
+import "./index.css";
+
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faAngleLeft,faAngleRight,faCommentDots } from '@fortawesome/free-solid-svg-icons';
+
+// library.add(faAngleLeft,faAngleRight,faCommentDots)
 
 class App extends Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
       active: 0,
-      showbox : 0
-    }
-    this.handleActive = this.handleActive.bind(this)
-    this.handleShowbox = this.handleShowbox.bind(this)
+      page : 1
+    };
+    this.handleActive = this.handleActive.bind(this);
+    this.handlePage = this.handlePage.bind(this);
   }
 
-  handleActive(what,event){
+  handleActive(what, event) {
     this.setState({
-      active:what
-    })
+      active: what
+    });
   }
 
-  handleShowbox(){
+  handlePage(what,event){ 
     this.setState({
-      showbox: !this.state.showbox
+      page:what
     })
   }
 
   render() {
     return (
       <div className="App">
-        <Nav active={this.state.active} handle={this.handleActive}/>
-        <Wrapper active={this.state.active} handle={this.handleActive}/>
+        <div className="blank"/>
+        <Head active={this.state.active} handle={this.handleActive}/>
+        <div id="page-wrap">
+        {this.state.active === 0 ? <Main/> : ""}
+        {this.state.active === 1 ? <Notice handle={this.handlePage} page={this.state.page}/>: ""}
+        {this.state.active === 2 ? <Study handle={this.handlePage} page={this.state.page}/>: ""}
+        {this.state.active === 3 ? <Wiki handle={this.handlePage} page={this.state.page}/>: ""}
+        {this.state.active === 4 ? <More handle={this.handlePage} page={this.state.page}/>: ""}
+        
+        </div>
+        <Footer active={this.state.active} handle={this.handleActive}/>
       </div>
     );
   }

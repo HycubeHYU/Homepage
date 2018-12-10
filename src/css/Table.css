@@ -1,0 +1,55 @@
+.table-responsive {
+  width: 90%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.notice-title {
+  text-align: left;
+}
+
+.study-state {
+  text-align: right;
+}
+
+.notice-title-active {
+  background: #cacaca;
+  text-align: left;
+}
+
+.notice-author {
+}
+
+.notice-author-active {
+  background: #cacaca;
+}
+
+.content {
+}
+
+.table-responsive {
+  border : 0px;
+}
+
+.table>thead>tr>th {
+  border-bottom: #fff !important;
+}
+
+table {
+  border-color: #fff !important;
+}
+
+thead {
+  border-top:0px;
+}
+
+th {
+  background-color: #fff;
+}
+
+tr {
+  border-bottom: 1px dotted #000;
+}
+

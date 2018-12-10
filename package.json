@@ -1,16 +1,19 @@
 {
-  "name": "Hycube",
+  "name": "hycube",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hycubehyu.github.io/Homepage",
+  "homepage":"https://hycubehyu.github.io/Homepage/",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.6",
-    "@fortawesome/free-solid-svg-icons": "^5.4.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
     "@fortawesome/react-fontawesome": "^0.1.3",
-    "npm": "^6.4.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4"
+    "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1",
+    "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
+    "react-burger-menu": "^2.5.4",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,8 +31,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  ]
 }
