@@ -4,8 +4,8 @@ class Contents extends Component {
     render() {
         return (
             <tr>
-                <td colSpan="2" className="content">
-                    {this.props.row.content}
+                <td colSpan="2" id="content-text" className="content">
+                    <div>{this.props.row.content}</div>
                 </td>
             </tr>
         );

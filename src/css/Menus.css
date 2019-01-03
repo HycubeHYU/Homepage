@@ -3,6 +3,10 @@
   overflow: auto;
 }
 
+.menu-item {
+  cursor: pointer;
+}
+
 .bm-item {
   display: inline-block;
   text-decoration: none;
