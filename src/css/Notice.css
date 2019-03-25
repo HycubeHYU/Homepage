@@ -1,0 +1,62 @@
+.notice-align {
+    text-align: justify;
+    word-break: keep-all;
+    white-space:normal;
+    overflow-x: hidden;
+}
+
+.notice-move {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 65px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    box-shadow: 3px 2px 3px 2px rgba(0,0,0,0.16), 3px 2px 5px 0 rgba(0,0,0,0.12);
+    border-radius: 100px;
+}
+
+table {
+    display: block;
+    width: 100%;
+}
+
+table, tbody, thead, tr{
+    display: inline-block;
+    width: 100%;
+}
+
+.notice-title-active, .notice-title {
+    display: inline-block;
+    width: 70%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+th {
+
+}
+
+.notice-author, .notice-author-actie {
+    display: inline-block;
+    width: 15%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+td.content {
+    display : inline-block !important;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+td#content-text {
+    width: 100% !important;
+}
+
+td#content-text div {
+    height: 300px;
+    overflow: auto;
+    white-space: normal;
+    text-align: justify;
+}
