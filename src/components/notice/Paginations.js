@@ -11,7 +11,7 @@ class Paginations extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://192.168.0.17:3000/notice/list/0")
+    fetch("http://18.216.159.54/notice/list/0")
       .then(res => {
         return res.json();
       })

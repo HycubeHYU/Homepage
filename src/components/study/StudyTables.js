@@ -18,7 +18,7 @@ class StudyTables extends Component {
   } 
 
   componentDidMount() {
-    fetch("http://192.168.0.17:3000/notice/list/1")
+    fetch("http://18.216.159.54/notice/list/1")
       .then(res => {
         return res.json();
       })
@@ -37,7 +37,7 @@ class StudyTables extends Component {
   }
 
   handlePage(page){
-    fetch("http://192.168.0.17:3000/notice/list/"+page)
+    fetch("http://18.216.159.54/notice/list/"+page)
     .then(res => {
       return res.json();
     })
